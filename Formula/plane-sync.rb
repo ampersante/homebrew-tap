@@ -1,5 +1,6 @@
 class PlaneSync < Formula
   include Language::Python::Shebang
+
   desc "Sync Plane projects with Markdown: snapshot, fetch, write, diff"
   homepage "https://github.com/ampersante/plane-sync"
   url "https://github.com/ampersante/plane-sync/archive/refs/tags/v0.1.0.tar.gz"
