@@ -3,8 +3,8 @@ class PlaneSync < Formula
 
   desc "Sync Plane projects with Markdown: snapshot, fetch, write, diff"
   homepage "https://github.com/ampersante/plane-sync"
-  url "https://github.com/ampersante/plane-sync/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "03e9d1d03b2b139bf30200ff3710aac2a48ebf4f0286f93ced1becba40cf49f1"
+  url "https://github.com/ampersante/plane-sync/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "bda654f89e3665418b1b9d4865293a01907d03754e12c96dd8f99d2ab5327b22"
   license "MIT"
 
   depends_on "python@3.13"
