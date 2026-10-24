@@ -12,7 +12,7 @@ class AppmetricaCli < Formula
     # Build a self-contained venv in libexec; uv resolves dependencies from
     # PyPI using the uv.lock shipped in the source tarball.
     ENV["UV_NO_PROGRESS"] = "1"
-    ENV["UV_CACHE_DIR"] = cache.to_s
+    ENV["UV_CACHE_DIR"] = ENV.fetch("HOMEBREW_CACHE")
     system "uv", "venv", "--python", Formula["python@3.13"].opt_bin/"python3", libexec
     system "uv", "pip", "install", "--python", libexec/"bin/python", "."
     bin.install_symlink libexec/"bin/appmetrica"
